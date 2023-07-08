@@ -10,6 +10,7 @@
   box-sizing: border-box;
   border: none;
   font-family: cursive, CairoFont;
+  direction: rtl;
 }
 
 body {
@@ -47,6 +48,9 @@ body {
   border: 1px solid #ddd;
   z-index: 10000000000000000000;
   position: absolute;
+  max-height: 136px;
+  height: auto;
+  margin-top: -10px;
 }
 
 .dropdown-container button {
@@ -80,16 +84,16 @@ main {
   padding: 30px;
   border-radius: 30px;
   box-shadow: 6px 9px 38px -26px #717171;
-  /* min-height: 300px; */
+  min-height: 750px;
 }
 
 /* hers illness s w d */
 
 section {
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -140,9 +144,112 @@ section {
   font-size: 30px;
   text-align: center;
   background: white;
+  margin-right: 8px;
   border: 1px solid #000;
-  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.panal {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  /* height: 43px; */
+  /* background: #090; */
+  margin-bottom: 14px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  padding-bottom: 19px;
+}
+
+.panal label {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.age_container {
+  background: #3f51b5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px;
+  border-radius: 14px;
+  height: fit-content;
+  min-height: 204px;
+}
+.age {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.start {
+  background: #22223d;
+}
+
+.end {
+  background: #22223d;
+}
+
+.comman {
+  width: 100%;
+  height: 51px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 6px;
+  padding: 9px;
+}
+
+.comman div {
+  width: 45%;
+}
+
+.age_container_label {
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding: 0px 19px 19px 19px;
+  border-bottom: 1px solid #000;
+}
+
+.Vrtical {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  margin: 3px;
+  color: #fff;
+}
+
+.age input {
+  width: 100%;
+  height: 50%;
+  /* margin: 5px; */
+  border-radius: 3px;
+  padding: 6px 6px 6px 11px;
+  font-weight: 600;
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+  min-height: 70px;
+  font-size: 14px;
+  border-radius: 14px;
+  margin-top: 10px;
+  padding-right: 15px;
+  padding-top: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }

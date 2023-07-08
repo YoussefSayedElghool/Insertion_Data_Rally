@@ -2,244 +2,204 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Insertion DB Rally App</title>
 
-<link rel="stylesheet" href="main.css" />
-    
+  <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
-
   <div class="page">
+    <main>
+      <section>
+        <div class="Searchabl_input_templet">
+          <input onclick="Dropdown(event)" onblur="DropUp(event)" onkeyup="filter(event)" type="text"
+            class="myInput herbs" placeholder="اختر العشبة.." />
 
-  <main>
+          <div class="dropdown-container">
+            <button onclick="Chooes(event)" value="1">About</button>
+            <button onclick="Chooes(event)" value="1">Base</button>
+            <button onclick="Chooes(event)" value="1">Blog</button>
+            <button onclick="Chooes(event)" value="1">Contact</button>
+            <button onclick="Chooes(event)" value="1">Custom</button>
+            <button onclick="Chooes(event)" value="1">Support</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+          </div>
+        </div>
+        <div class="Searchabl_input_templet">
+          <input onclick="Dropdown(event)" onblur="DropUp(event)" onkeyup="filter(event)" type="text"
+            class="myInput illnesses" placeholder="اختر المرض.." />
 
-  <section>
+          <div class="dropdown-container">
+            <button onclick="Chooes(event)" value="1">About</button>
+            <button onclick="Chooes(event)" value="1">Base</button>
+            <button onclick="Chooes(event)" value="1">Blog</button>
+            <button onclick="Chooes(event)" value="1">Contact</button>
+            <button onclick="Chooes(event)" value="1">Custom</button>
+            <button onclick="Chooes(event)" value="1">Support</button>
+            <button onclick="Chooes(event)" value="1">Tools</button>
+          </div>
+        </div>
+      </section>
 
-  <div class="Searchabl_input_templet">
-  
+      <section>
+        <div>
+          <div class="Muilty_Valued_Contaner">
+            <div class="panal">
+              <label>التحذيرات</label>
+              <button onclick="increasInfo(event)" class="increasInfo">
+                +
+              </button>
+            </div>
 
-    <input onclick="Dropdown(event)"   onkeyup="filter(event)" type="text"  class="myInput herbs" placeholder="herbs..">
+            <div class="Searchabl_input_templet">
+              <input onclick="Dropdown(event)" onblur="DropUp(event)" onkeyup="filter(event)" type="text"
+                class="myInput Warnings" placeholder="اختر تحذيرا.." />
 
-    <div class="dropdown-container">
-      <button onclick="Chooes(event)" value="1" >About</button>
-      <button onclick="Chooes(event)" value="1" >Base</button>
-      <button onclick="Chooes(event)" value="1" >Blog</button>
-      <button onclick="Chooes(event)" value="1" >Contact</button>
-      <button onclick="Chooes(event)" value="1" >Custom</button>
-      <button onclick="Chooes(event)" value="1" >Support</button>
-      <button onclick="Chooes(event)" value="1" >Tools</button>
-    </div>
-    
+              <div class="dropdown-container">
+                <button onclick="Chooes(event)" value="1">About</button>
+                <button onclick="Chooes(event)" value="1">Base</button>
+                <button onclick="Chooes(event)" value="1">Blog</button>
+                <button onclick="Chooes(event)" value="1">Contact</button>
+                <button onclick="Chooes(event)" value="1">Custom</button>
+                <button onclick="Chooes(event)" value="1">Support</button>
+                <button onclick="Chooes(event)" value="1">Tools</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="Muilty_Valued_Contaner">
+            <div class="panal">
+              <label>الاعراض</label>
+              <button onclick="increasInfo(event)" class="increasInfo">
+                +
+              </button>
+            </div>
+            <div class="Searchabl_input_templet">
+              <input onclick="Dropdown(event)" onblur="DropUp(event)" onkeyup="filter(event)" type="text"
+                class="myInput Symptoms" placeholder="اختر عرضا.." />
+
+              <div class="dropdown-container">
+                <button onclick="Chooes(event)" value="1">About</button>
+                <button onclick="Chooes(event)" value="1">Base</button>
+                <button onclick="Chooes(event)" value="1">Blog</button>
+                <button onclick="Chooes(event)" value="1">Contact</button>
+                <button onclick="Chooes(event)" value="1">Custom</button>
+                <button onclick="Chooes(event)" value="1">Support</button>
+                <button onclick="Chooes(event)" value="1">Tools</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="Muilty_Valued_Contaner">
+            <div class="panal">
+              <label>التفاعلات الدوئية</label>
+              <button onclick="increasInfo(event)" class="increasInfo">
+                +
+              </button>
+            </div>
+            <div class="Searchabl_input_templet">
+              <input onclick="Dropdown(event)" onblur="DropUp(event)" onkeyup="filter(event)" type="text"
+                class="myInput DrugInteractions" placeholder="اختر احد التفاعلات الدوئية.." />
+
+              <div class="dropdown-container">
+                <button onclick="Chooes(event)" value="1">About</button>
+                <button onclick="Chooes(event)" value="1">Base</button>
+                <button onclick="Chooes(event)" value="1">Blog</button>
+                <button onclick="Chooes(event)" value="1">Contact</button>
+                <button onclick="Chooes(event)" value="1">Custom</button>
+                <button onclick="Chooes(event)" value="1">Support</button>
+                <button onclick="Chooes(event)" value="1">Tools</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="Muilty_Valued_Contaner">
+            <div class="panal">
+              <label>التفاعلات العشبية</label>
+              <button onclick="increasInfo(event)" class="increasInfo">
+                +
+              </button>
+            </div>
+            <div class="Searchabl_input_templet">
+              <input onclick="Dropdown(event)" onblur="DropUp(event)" onkeyup="filter(event)" type="text"
+                class="myInput herbalInteractions" placeholder="اختر احد التفاعلات العشبية" />
+
+              <div class="dropdown-container">
+                <button onclick="Chooes(event)" value="1">About</button>
+                <button onclick="Chooes(event)" value="1">Base</button>
+                <button onclick="Chooes(event)" value="1">Blog</button>
+                <button onclick="Chooes(event)" value="1">Contact</button>
+                <button onclick="Chooes(event)" value="1">Custom</button>
+                <button onclick="Chooes(event)" value="1">Support</button>
+                <button onclick="Chooes(event)" value="1">Tools</button>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+
+
+      <div class="age_container">
+        <label class="age_container_label">العمر المناسب</label>
+        <div class="age">
+
+          <div class="Vrtical">
+            <label for="year">عمر ابتدائي</label>
+            <div class="start comman">
+              <div class="start_year">
+                <input type="number" class="start_year" placeholder="من سنة..">
+              </div>
+              <div class="start_month">
+                <input type="number" class="start_month" placeholder="من شهر..">
+              </div>
+            </div>
+          </div>
+
+          <div class="Vrtical">
+            <label>عمر نهائي</label>
+            <div class="end comman">
+              <div class="end_year">
+                <input type="number" class="start_year" placeholder="الي سنة..">
+              </div>
+              <div class="end_month">
+                <input type="number" class="start_month" placeholder="الي شهر..">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <textarea oninput="OnInput()" placeholder="How to use" type="text" autocomplete="on"></textarea>
+    </main>
+    <button class="submit" onclick="Search()">Submit</button>
   </div>
-  <div class="Searchabl_input_templet">
-  
 
-    <input onclick="Dropdown(event)"   onkeyup="filter(event)" type="text" class="myInput illnesses" placeholder="illnesses..">
+  <script src="../eel.js"></script>
 
-    <div class="dropdown-container">
-      <button onclick="Chooes(event)" value="1" >About</button>
-      <button onclick="Chooes(event)" value="1" >Base</button>
-      <button onclick="Chooes(event)" value="1" >Blog</button>
-      <button onclick="Chooes(event)" value="1" >Contact</button>
-      <button onclick="Chooes(event)" value="1" >Custom</button>
-      <button onclick="Chooes(event)" value="1" >Support</button>
-      <button onclick="Chooes(event)" value="1" >Tools</button>
-    </div>
-    
-  </div>
-</section>
-
-
-<section>
-
-<div>
-  <div class="Muilty_Valued_Contaner">
-    <button onclick="increasInfo(event)" class="increasInfo">+</button>
-  <div class="Searchabl_input_templet">
-  
-
-    <input onclick="Dropdown(event)"   onkeyup="filter(event)" type="text"  class="myInput Warnings" placeholder="Warnings..">
-
-    <div class="dropdown-container">
-      <button onclick="Chooes(event)" value="1" >About</button>
-      <button onclick="Chooes(event)" value="1" >Base</button>
-      <button onclick="Chooes(event)" value="1" >Blog</button>
-      <button onclick="Chooes(event)" value="1" >Contact</button>
-      <button onclick="Chooes(event)" value="1" >Custom</button>
-      <button onclick="Chooes(event)" value="1" >Support</button>
-      <button onclick="Chooes(event)" value="1" >Tools</button>
-    </div>
-    
-  </div>
-</div>
-
-<div class="Muilty_Valued_Contaner">
-  <button onclick="increasInfo(event)" class="increasInfo">+</button>
-  <div class="Searchabl_input_templet">
-  
-
-    <input onclick="Dropdown(event)"   onkeyup="filter(event)" type="text"  class="myInput Symptoms" placeholder="Symptoms..">
-
-    <div class="dropdown-container">
-      <button onclick="Chooes(event)" value="1" >About</button>
-      <button onclick="Chooes(event)" value="1" >Base</button>
-      <button onclick="Chooes(event)" value="1" >Blog</button>
-      <button onclick="Chooes(event)" value="1" >Contact</button>
-      <button onclick="Chooes(event)" value="1" >Custom</button>
-      <button onclick="Chooes(event)" value="1" >Support</button>
-      <button onclick="Chooes(event)" value="1" >Tools</button>
-    </div>
-    
-  </div>
-  </div>
-</div>
-  <div class="Muilty_Valued_Contaner">
-    <button onclick="increasInfo(event)" class="increasInfo">+</button>
-  <div class="Searchabl_input_templet">
-  
-
-    <input onclick="Dropdown(event)"   onkeyup="filter(event)" type="text" class="myInput DrugInteractions" placeholder="Drug Interactions..">
-
-    <div class="dropdown-container">
-      <button onclick="Chooes(event)" value="1" >About</button>
-      <button onclick="Chooes(event)" value="1" >Base</button>
-      <button onclick="Chooes(event)" value="1" >Blog</button>
-      <button onclick="Chooes(event)" value="1" >Contact</button>
-      <button onclick="Chooes(event)" value="1" >Custom</button>
-      <button onclick="Chooes(event)" value="1" >Support</button>
-      <button onclick="Chooes(event)" value="1" >Tools</button>
-    </div>
-    
-  </div>
-  </div>
-</section>
-
-
-</main>
-<button class="submit" onclick="Search()">Submit</button>
-</div>
-
-
-<script src="../eel.js"></script>
-  <script>
-
-  function Dropdown(e) {
-    e.target.parentElement.children[1].classList.toggle("show");
-  }
-
-  function DropUp(e) {
-    e.target.parentElement.classList.remove("show");
-  }
-
-
-
-  
-  function filter(e) {
-    var input = e.target;
-    var filter = input.value.toUpperCase();
-    var div = e.target.parentElement.children[1];
-    var a = div.children;
-
-    for (var i = 0; i < a.length; i++) {
-
-      txtValue = a[i].textContent || a[i].innerText;
-
-      if (txtValue.toUpperCase().indexOf(filter) > -1) a[i].style.display = "";
-      else a[i].style.display = "none";
-    }
-  }
-  
-  
-  
-  function Chooes(e){
-    e.target.parentElement.parentElement.children[0].value = e.target.innerText
-    console.log(e.target.parentElement.children[0])
-    DropUp(e)
-  }
-
-  function increasInfo(e){
-    container = e.target.parentElement; 
-    console.log(container.children[1])
-    copy = container.children[1].cloneNode(true)
-    container.appendChild(copy)
-  }
-
-
-
-
-  
-
-  // var inputSearch = document.getElementById("inputSearch");
-  // var bodySearch = document.getElementById("body-Search");
-  // var bodyDignosis = document.getElementById("body-Dignosis");
-  // var UserId = "";
-  // bodyDignosis.style.display = "none";
-
-
-  // (IllnessID, HerbsID, HowToUse, WarningsID, SymptomID, DrugInteractionsID)
-  function Search() {
-    // Symptoms Warnings DrugInteractions illnesses 
-    var herbs = document.getElementsByClassName("herbs")
-    var illnesses = document.getElementsByClassName("illnesses")
-    var Warnings = document.getElementsByClassName("Warnings")
-    var DrugInteractions = document.getElementsByClassName("DrugInteractions")
-    var Symptoms = document.getElementsByClassName("Symptoms")
-    
-    WarningsList = []
-    for (let WarningID of Warnings) {
-      WarningsList.push(WarningID.value)
-     }
-     SymptomsList = []
-    for (let SymptomsID of Symptoms) {
-      WarningsList.push(SymptomsID.value)
-     }
-
-     DrugInteractionsList = []
-    for (let DrugInteractionsID of DrugInteractions) {
-      WarningsList.push(DrugInteractionsID.value)
-     }
- 
-    
-    // .slice(1, 3)
-    eel.Add(herbs[0].value , illnesses[0].value ,"gty" , WarningsList , SymptomsList , DrugInteractionsList)
-  }
-
-
-  // Search();
-//   eel.Add(1 , 2 , 3 , 3)(
-
-// function PrintUserData(result) {
-  
-// });
-
-
-
-
-</script>
+  <script src="main.js"></script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
