@@ -18,7 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background: aliceblue;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -80,11 +80,11 @@ main {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  margin-top: -60px;
+  margin-top: 60px;
   padding: 30px;
   border-radius: 30px;
   box-shadow: 6px 9px 38px -26px #717171;
-  min-height: 750px;
+  /* min-height: 750px; */
 }
 
 /* hers illness s w d */
@@ -121,7 +121,7 @@ section {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  height: 57vh;
+  height: auto;
 }
 
 .Muilty_Valued_Contaner {
@@ -252,4 +252,5 @@ textarea {
   padding-top: 10px;
   overflow-x: hidden;
   overflow-y: auto;
+  resize: none;
 }
